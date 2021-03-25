@@ -127,7 +127,8 @@ class ToolbarListener implements ListenerAggregateInterface
         $toolbarJs->setTemplate('zend-developer-tools/toolbar/script');
         $script      = $this->renderer->render($toolbarJs);
 
-        $toolbar  = str_replace('$', '\$', $toolbar);
+        //$toolbar  = str_replace('$', '\$', $toolbar);
+        $toolbar  = str_replace(['$', '\\\\'], ['\$', '\\\\\\'], $toolbar);
         $injected = preg_replace(
             '/<\/body>(?![\s\S]*<\/body>)/i',
             $toolbar . $script . "\n</body>",
