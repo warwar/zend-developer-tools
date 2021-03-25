@@ -1,6 +1,6 @@
 {
-    "name": "zendframework/zend-developer-tools",
-    "description": "Module for developer and debug tools for use with zend-mvc applications.",
+    "name": "warwar/zend-developer-tools",
+    "description": "fixed Module for developer and debug tools for use with zend-mvc applications.",
     "license": "BSD-3-Clause",
     "keywords": [
         "zendframework",
